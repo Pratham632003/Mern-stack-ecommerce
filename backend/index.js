@@ -14,8 +14,8 @@ const CLOUDINARY_API_KEY = "433448672311676";
 const CLOUDINARY_API_SECRET = "xopDdT8GqKMv8rIYgfFZ6_xefaA";
 
 
-//Config
-require('dotenv').config({ path: './config/config.env' });
+// //Config
+// require('dotenv').config({ path: './config/config.env' });
 
 
 // Handling Uncaught Exception
@@ -26,10 +26,10 @@ process.on("uncaughtException" , (err)=> {
   process.exit(1);
 })
 
-// Config
-// if(process.env.NODE_ENV !== "PRODUCTION"){
-//   require("dotenv").config({path: "backend/config/config.env"});
-// }
+Config
+if(process.env.NODE_ENV !== "PRODUCTION"){
+  require("dotenv").config({path: "backend/config/config.env"});
+}
 
 const errorMiddleware = require('./middleware/error');
 
