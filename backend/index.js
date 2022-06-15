@@ -14,8 +14,8 @@ const CLOUDINARY_API_KEY = "433448672311676";
 const CLOUDINARY_API_SECRET = "xopDdT8GqKMv8rIYgfFZ6_xefaA";
 
 
-// //Config
-// require('dotenv').config({ path: './config/config.env' });
+//Config
+require('dotenv').config({ path: './config/config.env' });
 
 
 // Handling Uncaught Exception
@@ -26,16 +26,16 @@ process.on("uncaughtException" , (err)=> {
   process.exit(1);
 })
 
-Config
-if(process.env.NODE_ENV !== "PRODUCTION"){
-  require("dotenv").config({path: "backend/config/config.env"});
-}
+// Config
+// if(process.env.NODE_ENV !== "PRODUCTION"){
+//   require("dotenv").config({path: "backend/config/config.env"});
+// }
 
 const errorMiddleware = require('./middleware/error');
 
 connectToMongo();
 const app = express();
-const PORT = 4000;
+// const PORT = 4000;
 
 
 cloudinary.config({
@@ -70,8 +70,8 @@ app.get('*', (req, res) => {
 // Middleware for errors
 app.use(errorMiddleware)
 
-const server = app.listen(PORT, () => {
-    console.log(`Mern Project backend listening at http://localhost:${PORT}`)
+const server = app.listen(process.env.PORT, () => {
+    console.log(`Mern Project backend listening at http://localhost:${process.env.PORT}`)
   })
 
 // Unhandled Promise Rejection
