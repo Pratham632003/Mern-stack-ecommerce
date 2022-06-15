@@ -1,0 +1,138 @@
+.footer {
+  margin-top: 10vmax;
+  padding: 2vmax;
+  background-color: rgb(34, 33, 33);
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.footer__left {
+  width: 20%;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+.footer__left > h4 {
+  font-family: "Roboto";
+  font-size: 1vmax;
+}
+.footer__left > p {
+  text-align: center;
+  font-size: 1.2vmax;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.footer__left > img {
+  width: 10vmax;
+  margin: 1vmax;
+  cursor: pointer;
+}
+
+.footer__mid {
+  width: 60%;
+
+  text-align: center;
+}
+
+.footer__mid > h1 {
+  font-size: 4vmax;
+  font-family: "Roboto";
+  color: #eb4034;
+}
+.footer__mid > p {
+  max-width: 60%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 1vmax auto;
+}
+
+.footer__right {
+  width: 20%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__right > h4 {
+  font-family: "Roboto";
+  font-size: 1.4vmax;
+  text-decoration: underline;
+}
+.footer__right > a {
+  text-decoration: none;
+  font-size: 1.3vmax;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  transition: all 0.5s;
+  margin: 0.5vmax;
+}
+
+.footer__right > a:hover {
+  color: #eb4034;
+}
+
+/* .footer{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(36, 33, 33);
+    color: rgb(224, 216, 216);
+    margin-top: 100%;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer__left{
+    flex: 0.3;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    align-items: center;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.footer__playstore__image{
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.footer__appstore__image{
+    width: 170px;
+    height: 70px;
+}
+
+.footer__mid{
+    flex:  0.4;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content:center;
+}
+
+.footer__mid h1{
+    margin-bottom: 15px;
+}
+
+.footer__right{
+    flex: 0.3;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer__right h4{
+    margin-bottom: 15px;
+}
+
+.footer__right a{
+    text-decoration: none;
+}
+
+.footer__right :hover{
+    color: yellow;
+    transition: all 0.5s;
+} */
