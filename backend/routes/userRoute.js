@@ -100,7 +100,7 @@ router.post('/forgotpassword' , catchAsyncErrors(async( req, res , next) => {
 
     await user.save({validateBeforeSave: false});
     
-    const resetPasswordurl = `${req.protocol}://${req.get("host")}/password/reset/${resetToken}`;
+    const resetPasswordurl = `${req.protocol}://${req.get('host')}/api/v1/users/resetpassword/${resetToken}`;
     // const resetPasswordurl = `${FRONTEND_URL}/password/reset/${resetToken}`;
     const message = `Your Password reset token isx :- \n\n ${resetPasswordurl} \n\n If you have not requested this email then Please ignore it.`;
 

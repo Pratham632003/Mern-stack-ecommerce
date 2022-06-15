@@ -58,7 +58,8 @@ router.get('/getAllProducts' , catchSyncErrors( async (req , res) => {
     .search()
     .filter();
 
-  let products = await apiFeature.query.clone();
+  // let products = await apiFeature.query.clone();
+  let products = await apiFeature.query;
 
   let filteredProductsCount = products.length;
 

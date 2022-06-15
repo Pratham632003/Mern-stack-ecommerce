@@ -5,18 +5,17 @@ const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
 const cloudinary = require("cloudinary");
 const fileUpload = require("express-fileupload");
-// const dotenv = require("dotenv");
 
 /* For production */
 const path = require('path');
 
-// const CLOUDINARY_NAME = "dctsq7knn";
-// const CLOUDINARY_API_KEY = "433448672311676";
-// const CLOUDINARY_API_SECRET = "xopDdT8GqKMv8rIYgfFZ6_xefaA";
+const CLOUDINARY_NAME = "dctsq7knn";
+const CLOUDINARY_API_KEY = "433448672311676";
+const CLOUDINARY_API_SECRET = "xopDdT8GqKMv8rIYgfFZ6_xefaA";
 
 
 //Config
-// dotenv.config({path: "backend/config/config.env"});
+require('dotenv').config({ path: './config/config.env' });
 
 
 // Handling Uncaught Exception
@@ -28,9 +27,9 @@ process.on("uncaughtException" , (err)=> {
 })
 
 // Config
-if(process.env.NODE_ENV !== "PRODUCTION"){
-  require("dotenv").config({path: "backend/config/config.env"});
-}
+// if(process.env.NODE_ENV !== "PRODUCTION"){
+//   require("dotenv").config({path: "backend/config/config.env"});
+// }
 
 const errorMiddleware = require('./middleware/error');
 
